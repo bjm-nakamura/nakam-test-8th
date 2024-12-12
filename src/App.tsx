@@ -27,14 +27,10 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        {user && (
-          <>
-            <p>
-              Logged in as: {user.username}
-            </p>
-            <button onClick={signOut}>Sign Out</button>
-          </>
-        )}
+        <p>
+          Hello, {user?.signInDetails?.loginId}
+        </p>
+        <button onClick={signOut}>Sign Out</button>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
