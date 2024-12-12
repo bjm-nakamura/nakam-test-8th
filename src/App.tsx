@@ -9,7 +9,9 @@ function App() {
 
   return (
     <Authenticator>
-      {({ signOut, user }) => (
+      {/* signOut, userを使ってないからエラーが出る。とりあえず削除 */}
+      {/* {({ signOut, user }) => (  */}
+      {() => (
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
